@@ -7,7 +7,8 @@
     "start": "node index.js",
     "dev": "nodemon index.js",
     "migrate": "node db.js --migrate",
-    "build": "node db.js --migrate"
+    "build": "node db.js --migrate",
+    "postinstall": "npm rebuild sqlite3 --build-from-source"
 },
 "dependencies": 
   {
